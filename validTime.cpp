@@ -15,7 +15,7 @@ bool validTime(std::string time) {
     if( numb >= 2400 || numb < 0)
         return false;
         
-    if(numb % 100 > 60)
+    if(numb % 100 >= 60)
         return false;
         
     return true;
